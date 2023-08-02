@@ -1,0 +1,134 @@
+html{
+    font-size: 16px;
+    text-align: center;
+    background-color: rgba(248, 185, 195, 0.411);  
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Edu SA Beginner', cursive;
+}
+P{
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+body{
+    
+   width: 100vw;
+   height: 100vh;
+}
+.header{
+    width: 100vw;
+}
+.carousel-caption{
+    background-color: rgba(158, 148, 148, 0.534);
+}
+
+/* ************************************** image gallery */
+.featuredImage{
+    width: 100%;
+    height: 50%;
+    padding-bottom: 2em;
+}
+.featured{
+    width: 100%;
+}
+.indexImage{
+    display: grid;
+    grid-gap: 1em;
+    margin: 0 auto;
+    width: 90%;
+}
+.Cimage{
+    width: 100%;
+    height: auto;
+ 
+}
+.contentCont,.imageCollection{
+    width: 100%;
+}
+@media screen and (min-width: 200px) and (max-width: 600px) {
+
+    .carousel{
+        width: 100%;
+        /* background-color: red; */
+    }
+    .carousel-item{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* .contentCont,.imageCollection{
+        width: 100%;
+    } */
+    .imageCollection{
+       margin: 0 auto;
+    }
+    .indexImage{
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+        width: 70%;
+    
+    }
+    .Cimage{
+        width: 100%;
+        height: auto;
+    
+    }
+       /* ************************************** image gallery*/
+
+
+       /* ************************************** */
+
+} /*@media screen and (min-width: 200px) and (max-width: 600px)----closes */
+  
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .header{
+        width: 100%;
+       
+    }
+    
+    .indexImage{
+        grid-template-columns: repeat(auto-fill, minmax(200px,2fr));
+        grid-template-rows: 2fr;
+        margin: 0 auto;
+        width: 90%;
+        
+    }
+    .Cimage{
+        width: 100%;
+        height: auto;
+     
+    }
+
+}/*@media screen and (min-width: 600px) and (max-width: 800px)*/
+
+@media screen and (min-width: 800px) and (max-width: 2000px) {
+    
+    .carousel-inner{
+        height: 30%;
+    }
+    /**********************************************Image area*******************/
+    .featuredImage{
+        width: 85%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    .featured{
+        width: 100%;
+        /* height: 45rem; */
+        height: cover;
+    }
+    .indexImage{
+        grid-template-columns: repeat(auto-fill, minmax(200px,2fr));
+        grid-template-rows: 2fr;
+        margin: 0 auto;
+        width: 80%;
+        
+    }
+    .Cimage{
+        width: 100%;
+        height: auto;
+     
+    }
+  }/*@media screen and (min-width: 800px) and (max-width: 2000px)*/
